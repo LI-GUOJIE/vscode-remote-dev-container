@@ -22,7 +22,16 @@ There is a serious problem with the official remote container version of the tut
 
 
 ----------
-### Easy Tutorial ([If you encounter a problem](https://github.com/LI-GUOJIE/vscode-remote-dev-container/issues))
+### A simpler way suddenly came to mind
+```
+1. Create docker containers on cloud servers
+2. Install SSH service in docker container
+3. On the local PC, only VSCODE and the REMOTE SSH plugin need to be installed
+```
+
+
+----------
+### Old Easy Tutorial ([If you encounter a problem](https://github.com/LI-GUOJIE/vscode-remote-dev-container/issues))
 ##### Cloud Server Environment Preparation
 ```
 1. Install Docker
