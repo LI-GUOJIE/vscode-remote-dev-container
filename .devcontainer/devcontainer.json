@@ -1,0 +1,51 @@
+{
+	// 进入容器后的绝对路径
+	"workspaceFolder": "/home/vscode/code",
+
+	// source为云服务器上docker宿主机的绝对路径，target为容器中的绝对路径，挂载方式为Bind
+	"workspaceMount": "source=/home/egg/docker/vscode/cpp,target=/home/vscode,type=bind,consistency=cached",
+
+	// 相当于docker的Expose端口
+	"appPort": [
+		"0.0.0.0:20011:20011",
+		"0.0.0.0:20012:20012",
+		"0.0.0.0:20013:20013",
+		"0.0.0.0:20014:20014",
+		"0.0.0.0:20015:20015"
+	],
+
+	// 这里的Forward，并不是docker容器内部到外部的转发，而是【docker容器内部到运行vscode的PC之间的转发】
+	// "forwardPorts": [],
+
+
+
+	// ===================== The followings are cloned from https://github.com/microsoft/vscode-remote-try-cpp =====================
+	// ===================== 以下内容来自 https://github.com/microsoft/vscode-remote-try-cpp =====================
+	"name": "C++",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "gcc -v",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "egg"
+}

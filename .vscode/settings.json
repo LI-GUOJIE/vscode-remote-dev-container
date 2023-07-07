@@ -1,0 +1,9 @@
+{
+    // 更方便的做法是，按Ctrl+Shift+P，输入settings.json，选择用户的settings.json并插入这一行。
+    // 【tc】是由于我设置了【ssh别名登录】。在我的PowerShell中，输入【ssh tc】即可登录云服务器。
+    // 参考这条链接设置【ssh别名登录】（我本人并没有看过这篇文章）：https://ostechnix.com/how-to-create-ssh-alias-in-linux/
+
+    // It's better to add this line into User's settings.json.
+    // How to set an alias name to login SSH server: https://ostechnix.com/how-to-create-ssh-alias-in-linux/
+    "docker.host":"ssh://tc"
+}
