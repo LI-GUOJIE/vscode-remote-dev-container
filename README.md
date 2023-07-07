@@ -22,7 +22,15 @@
 
 
 ----------
-### 简易教程（[遇到问题](https://github.com/LI-GUOJIE/vscode-remote-dev-container/issues)）
+### 突然想到了一个更简单的方法
+```
+1. 云服务器上创建docker容器
+2. 在docker容器中安装SSH服务
+3. 在本地PC上，仅需安装 VSCODE 以及 REMOTE SSH 插件
+```
+
+----------
+### 旧的简易教程（[遇到问题](https://github.com/LI-GUOJIE/vscode-remote-dev-container/issues)）
 ##### 云服务器环境准备
 ```
 1. 安装完整版的docker
