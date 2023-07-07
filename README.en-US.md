@@ -22,7 +22,7 @@ There is a serious problem with the official remote container version of the tut
 
 
 ----------
-### Easy Tutorial
+### Easy Tutorial ([If you encounter a problem](https://github.com/LI-GUOJIE/vscode-remote-dev-container/issues))
 ##### Cloud Server Environment Preparation
 ```
 1. Install Docker
